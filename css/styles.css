@@ -323,6 +323,11 @@ a {
 	bottom: 10px;
 }
 
+/* grids */
+.grid {
+	display: grid;
+}
+
 /* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
@@ -387,5 +392,12 @@ a {
 	}
 	.quote-company {
 		font-size: 1.6rem;
+	}
+}
+
+/* Media queries for grid */
+@media screen and (min-width: 768px) {
+	.grid-1x2 {
+		grid-template-columns: 1fr 1fr;
 	}
 }
