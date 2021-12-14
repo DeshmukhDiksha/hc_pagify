@@ -86,6 +86,28 @@ a {
 .badge-small {
 	font-size: 1.6rem;
 }
+
+/* list */
+.list {
+	list-style: none;
+	padding-left: 0;
+	color: var(--color-headings);
+}
+
+.list-inline .list-item {
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+.list-marked {
+	list-style-image: url(../images/tick.svg);
+	padding-left: 3rem;
+}
+
+.list-marked .list-item {
+	padding-left: 0.5rem;
+}
+
 /* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
@@ -116,5 +138,12 @@ a {
 	}
 	.badge-small {
 		font-size: 1.2rem;
+	}
+}
+
+/* Media queries for list */
+@media screen and (min-width: 1024px) {
+	.list-marked.list-item {
+		padding-left: 0;
 	}
 }
