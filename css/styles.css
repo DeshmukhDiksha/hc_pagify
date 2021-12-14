@@ -6,6 +6,11 @@
 	--color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
 /* Typography */
 html {
 	/* 10px */
@@ -128,6 +133,56 @@ a {
 	align-items: center;
 }
 
+/* Button */
+.button {
+	border-radius: 40px;
+	border: 0;
+	cursor: pointer;
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding: 2rem 3rem;
+	text-transform: capitalize;
+	white-space: nowrap;
+	text-align: center;
+	margin: 1rem 0;
+}
+.button-primary {
+	background: var(--color-primary);
+	color: #fff;
+}
+.button-secondary {
+	background: var(--color-secondary);
+	color: #fff;
+}
+.button-accet {
+	background: var(--color-accent);
+	color: #fff;
+}
+.button-outline {
+	background: var(--color-headings);
+	border: 2px solid var(--color-headings);
+	color: #fff;
+}
+/* Hover effect on button */
+.button-primary:hover {
+	background: #3a8ffd;
+}
+.button-secondary:hover {
+	background: #00c8eb;
+}
+.button-accet:hover {
+	background: #ec3000;
+}
+.button-block {
+	width: 100%;
+	display: inline-block;
+}
+
+.button-otline:hover {
+	background: var(--color-headings);
+	color: #fff;
+}
+
 /* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
@@ -165,5 +220,12 @@ a {
 @media screen and (min-width: 1024px) {
 	.list-marked.list-item {
 		padding-left: 0;
+	}
+}
+
+/* Media queries for button */
+@media screen and (min-width: 1024px) {
+	button {
+		font-size: 1.5rem;
 	}
 }
