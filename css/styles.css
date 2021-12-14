@@ -277,6 +277,20 @@ a {
 	right: 5%;
 }
 
+/* Media */
+.media {
+	display: flex;
+}
+.media-title {
+	margin-top: 0;
+}
+.media-body {
+	margin: 0 2rem;
+}
+.media-image {
+	margin-top: 1rem;
+}
+
 /* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
