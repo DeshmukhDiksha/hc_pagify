@@ -65,6 +65,27 @@ a {
 	margin-left: 10px;
 }
 
+/* Badges */
+
+.badge {
+	border-radius: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 0.5rem;
+	white-space: nowrap;
+}
+.badge-primary {
+	background: var(--color-primary);
+	color: #fff;
+}
+.badge-secondary {
+	background: var(--color-secondary);
+	color: #fff;
+}
+
+.badge-small {
+	font-size: 1.6rem;
+}
 /* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
@@ -85,5 +106,15 @@ a {
 @media screen and (min-width: 1024px) {
 	link {
 		font-size: 1.5rem;
+	}
+}
+
+/* Media quiries for badges */
+@media screen and (min-width: 1024px) {
+	.badge {
+		font-size: 1.5rem;
+	}
+	.badge-small {
+		font-size: 1.2rem;
 	}
 }
