@@ -183,6 +183,19 @@ a {
 	color: #fff;
 }
 
+/* Input */
+.input {
+	border-radius: 30px;
+	outline: 0;
+	padding: 1.5rem 3.5rem;
+	color: var(--color-headings);
+	border: 1px solid #ccc;
+	font-size: 2rem;
+}
+::placeholder {
+	color: #cdcbd7;
+}
+
 /* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
@@ -227,5 +240,11 @@ a {
 @media screen and (min-width: 1024px) {
 	button {
 		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.input {
+		font-size: 1.4rem;
 	}
 }
