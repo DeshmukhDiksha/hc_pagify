@@ -6,6 +6,7 @@
 	--color-body: #918ca4;
 }
 
+/* Typography */
 html {
 	/* 10px */
 	font-size: 62.5%;
@@ -44,7 +45,27 @@ p {
 	margin-top: 0;
 }
 
-/* Media quiries */
+/* Links */
+a {
+	text-decoration: none;
+}
+.link-arrow {
+	color: var(--color-accent);
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.link-arrow::after {
+	content: '-->';
+	margin-left: 5px;
+	/* for smooth transition */
+	transition: margin 0.15s;
+}
+.link-arrow:hover::after {
+	margin-left: 10px;
+}
+
+/* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
 		font-size: 1.8rem;
@@ -57,5 +78,12 @@ p {
 	}
 	h3 {
 		font-size: 2.4rem;
+	}
+}
+
+/* Media quries for arrows i.e. link */
+@media screen and (min-width: 1024px) {
+	link {
+		font-size: 1.5rem;
 	}
 }
