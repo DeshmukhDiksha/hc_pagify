@@ -32,6 +32,8 @@ h1,
 h2,
 h3 {
 	color: var(--color-headings);
+	margin-bottom: 1rem;
+	line-height: 1.1;
 }
 
 /*  1rem = 1*10 = 10px  */
@@ -167,7 +169,7 @@ a {
 	background: var(--color-secondary);
 	color: #fff;
 }
-.button-accet {
+.button-accent {
 	background: var(--color-accent);
 	color: #fff;
 }
@@ -183,7 +185,7 @@ a {
 .button-secondary:hover {
 	background: #00c8eb;
 }
-.button-accet:hover {
+.button-accent:hover {
 	background: #ec3000;
 }
 .button-block {
@@ -474,11 +476,28 @@ a {
 .nav-brand {
 	transform: translateY(5px);
 }
+
+/* Hero */
+.hero-tagline {
+	font-size: 2rem;
+	color: #b9c3cf;
+	letter-spacing: 1px;
+	margin-top: 2rem 0 5rem;
+}
+.hero-image {
+	width: 100%;
+}
+
 /* Handy */
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
+.hero {
+	clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+
 /* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
@@ -590,5 +609,15 @@ a {
 	}
 	.nav-item {
 		border: 0;
+	}
+}
+/* Media queries for hero*/
+@media screen and (min-width: 768px) {
+	.hero {
+		padding-top: 0;
+	}
+	.hero-content {
+		text-align: left;
+		align-self: center;
 	}
 }
