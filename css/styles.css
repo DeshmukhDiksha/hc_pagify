@@ -406,6 +406,39 @@ a {
 	max-height: 100vh;
 	opacity: 1;
 }
+/* Blocks */
+.block {
+	--padding-vertical: 6rem;
+	padding: --padding-vertical 2rem;
+}
+
+.block-heading {
+	margin-top: 0;
+}
+.block-dark {
+	background: black;
+	color: #7b858b;
+}
+
+.block-dark .block-heading {
+	color: #fff;
+}
+.block-sckewed-right {
+	padding: calc(var(--padding-vertical) + 4rem);
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 80%);
+}
+.block-sckewed-left {
+	padding: calc(var(--padding-vertical) + 4rem);
+	clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+.block-header {
+	text-align: center;
+}
+/* Handy */
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
 /* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
