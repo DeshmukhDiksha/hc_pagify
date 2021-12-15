@@ -191,9 +191,13 @@ a {
 	display: inline-block;
 }
 
-.button-otline:hover {
+.button-outline:hover {
 	background: var(--color-headings);
 	color: #fff;
+}
+.button-streched {
+	padding-left: 6rem;
+	padding-right: 6rem;
 }
 
 /* Input */
@@ -354,6 +358,28 @@ a {
 	right: -32px;
 }
 
+/* Callout */
+.callout {
+	padding: 4rem;
+	border-radius: 5px;
+}
+.callout-primary {
+	background: var(--color-primary);
+	color: #fff;
+}
+.callout-header {
+	color: #fff;
+	margin-top: 0;
+	font-size: 3rem;
+}
+.callout .button {
+	justify-self: center;
+	align-self: center;
+}
+.callout-content {
+	text-align: center;
+}
+
 /* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
@@ -435,5 +461,18 @@ a {
 	}
 	.testimonial .quote {
 		margin-right: 6rem;
+	}
+}
+/* Media queries for Callout*/
+@media screen and (min-width: 768px) {
+	.callout .grid-1x2 {
+		grid-template-columns: 1fr auto;
+	}
+	.callout-content {
+		text-align: left;
+	}
+	.callout .button {
+		justify-self: start;
+		margin: 0 2rem;
 	}
 }
