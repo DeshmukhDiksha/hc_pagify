@@ -544,6 +544,24 @@ a {
 	clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
 }
 
+/* Features */
+.feature {
+	gap: 4rem 2rem;
+	margin: 12rem 0;
+}
+
+.feature:first-of-type {
+	margin-top: 6rem;
+}
+
+.feature-heading {
+	margin: 1rem 0;
+}
+
+.feature-image {
+	width: 100%;
+}
+
 /* Media quiries for typography*/
 @media screen and (min-width: 1024px) {
 	body {
@@ -683,5 +701,12 @@ a {
 @media screen and (min-width: 768px) {
 	.callout .grid-1x3 {
 		grid-template-columns: 1fr auto;
+	}
+}
+
+/* Meedia quieris for feature */
+@media screen and (min-width: 768px) {
+	.feature:nth-of-type(even) .feature__content {
+		order: 2;
 	}
 }
