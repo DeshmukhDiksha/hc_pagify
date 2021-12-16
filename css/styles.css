@@ -178,6 +178,12 @@ a {
 	border: 2px solid var(--color-headings);
 	color: #fff;
 }
+.button .icon {
+	height: 2rem;
+	width: 2rem;
+	margin-right: 1rem;
+	vertical-align: middle;
+}
 /* Hover effect on button */
 .button-primary:hover {
 	background: #3a8ffd;
@@ -224,7 +230,7 @@ a {
 .input-group .input {
 	border: 0;
 	flex-grow: 1;
-	padding: 1.5rem 1rem;
+	padding: 1.5rem 2rem;
 }
 .input-group .button {
 	margin: 4px;
@@ -411,7 +417,7 @@ a {
 /* Blocks */
 .block {
 	--padding-vertical: 6rem;
-	padding: --padding-vertical 2rem;
+	padding: var(--padding-vertical) 2rem;
 }
 
 .block-heading {
@@ -486,6 +492,21 @@ a {
 }
 .hero-image {
 	width: 100%;
+}
+
+/* Domain block */
+.block-domain .input-group {
+	box-shadow: 0 0 30px 20px #e6ebee;
+	border: 0;
+	margin: 4rem 0;
+}
+.block-domain-prices {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 6rem);
+	font-size: 2rem;
+	font-weight: 600;
+	justify-items: center;
 }
 
 /* Handy */
@@ -619,5 +640,11 @@ a {
 	.hero-content {
 		text-align: left;
 		align-self: center;
+	}
+}
+/* Media queries for Block domain*/
+@media screen and (min-width: 768px) {
+	.block-domain-prices {
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 	}
 }
