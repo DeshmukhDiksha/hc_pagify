@@ -14,6 +14,10 @@
 *::before {
 	box-sizing: border-box;
 }
+::selection {
+	background: var(--color-primary);
+	color: #fff;
+}
 /* Typography */
 html {
 	/* 10px */
@@ -49,6 +53,7 @@ h3 {
 	font-size: 3rem;
 	/* Avoid margin collapsing  between header and content*/
 	margin-bottom: 1rem;
+	font-weight: 500;
 }
 p {
 	/* Avoid margin collapsing */
@@ -102,7 +107,6 @@ a {
 .list {
 	list-style: none;
 	padding-left: 0;
-	color: var(--color-headings);
 }
 
 .list-inline .list-item {
@@ -112,6 +116,7 @@ a {
 
 .list-marked {
 	list-style-image: url(../images/tick.svg);
+	color: var(--color-headings);
 	padding-left: 3rem;
 }
 
@@ -319,6 +324,7 @@ a {
 /* Media */
 .media {
 	display: flex;
+	margin-bottom: 4rem;
 }
 .media-title {
 	margin-top: 0;
@@ -444,7 +450,11 @@ a {
 	background: black;
 	color: #7b858b;
 }
-
+.block-dark h1,
+.block-dark h2,
+.block-dark h3 {
+	color: #fff;
+}
 .block-dark .block-heading {
 	color: #fff;
 }
@@ -559,6 +569,11 @@ a {
 }
 
 .feature-image {
+	width: 100%;
+}
+
+/* Showcase block */
+.block-showcase-image > img {
 	width: 100%;
 }
 
@@ -708,5 +723,16 @@ a {
 @media screen and (min-width: 768px) {
 	.feature:nth-of-type(even) .feature__content {
 		order: 2;
+	}
+}
+/* Meedia quieris for showcase */
+@media screen and (min-width: 768px) {
+	.block-showcase-image {
+		justify-self: end;
+		width: auto;
+		max-width: 700px;
+	}
+	.block-showcase .grid {
+		grid-template-columns: 50% 50%;
 	}
 }
