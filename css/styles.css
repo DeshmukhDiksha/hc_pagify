@@ -424,7 +424,7 @@ a {
 	transform: rotate(-90deg);
 	transition: transform 0.3s;
 }
-.collapsible-contect {
+.collapsible-content {
 	max-height: 0;
 	overflow: hidden;
 	opacity: 0;
@@ -433,7 +433,7 @@ a {
 .collapsible-expanded .collapsible-chevron {
 	transform: rotate(0);
 }
-.collapsible-expanded .collapsible-contect {
+.collapsible-expanded .collapsible-content {
 	max-height: 100vh;
 	opacity: 1;
 }
@@ -576,6 +576,48 @@ a {
 /* Showcase block */
 .block-showcase-image > img {
 	width: 100%;
+}
+
+/* Footer */
+.footer {
+	background: #232323;
+}
+.footer a {
+	color: #777;
+	transition: color 0.3s;
+}
+.footer a:hover {
+	color: #fff;
+}
+.footer-section {
+	padding: 2rem;
+	border-bottom: 1px solid #393939;
+}
+.footer .list {
+	margin: 0;
+}
+.footer .collapsible-content {
+	color: #fff;
+	opacity: 0.5;
+}
+.footer-heading {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.footer-brand {
+	margin-top: 5rem;
+	text-align: center;
+}
+.footer-copyright {
+	font-size: 2.1rem;
+	color: #fff;
+	opacity: 0.3;
+}
+.footer-brand img {
+	/* todo: Need to refactor this and apply it to all images */
+	width: 100%;
+	max-width: 230px;
 }
 
 /* Media quiries for typography*/
@@ -735,5 +777,31 @@ a {
 	}
 	.block-showcase .grid {
 		grid-template-columns: 50% 50%;
+	}
+}
+/* Meedia quieris for footer */
+@media screen and (min-width: 768px) {
+	.footer-sections {
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	}
+	.footer .collapsible-chevron {
+		display: none;
+	}
+	.footer .collapsible-content {
+		opacity: 1;
+		max-height: 100%;
+	}
+	.footer-brand {
+		margin-top: 1rem;
+		order: -1;
+	}
+	.footer-copyright {
+		font-size: 1.5rem;
+	}
+	.footer-section {
+		border: 0;
+	}
+	.footer-heading {
+		font-size: 1.6rem;
 	}
 }
